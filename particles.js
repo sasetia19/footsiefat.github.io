@@ -9,7 +9,7 @@
 function hexToRgb(e) {
     var a = /^#?([a-f\d])([a-f\d])([a-f\d])$/i;
     e = e.replace(a, function (e, a, t, i) {
-        return a + a + t + t + i + i;
+        return a + a + t + t + i + i + i;
     });
     var t = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(e);
     return t
